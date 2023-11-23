@@ -4,6 +4,11 @@
 
 /* Estilos globales */
 
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 html {
     display: flex;
     flex-direction: column;
@@ -19,34 +24,26 @@ html body {
 }
 
 html body nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 20px;
     background-color: rgba(129, 12, 168, 0.25);
     min-height: 50px;
-    margin: 20px 40px;
+    margin: 20px 40px !important;
     border-radius: 15px;
 }
 
+html body nav .collapse {
+    justify-content: center;
+}
+
 html body nav a {
-    display: flex;
     font-family: 'Kalam', cursive;
     text-decoration: none;
     color: white;
     font-size: 17px;
 }
 
-@media (max-width: 768px) {
-    html body nav a {
-        display: none;
-    }
-}
-
 html body footer {
     background-color: #E5B8F4;
-    display: flex;
-    justify-content: flex-end;
     gap: 20px;
     padding: 20px 40px;
 }
@@ -66,9 +63,6 @@ html body footer img {
 html body main#index {
     flex-grow: 1;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     position: relative;
 }
 
