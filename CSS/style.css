@@ -49,11 +49,11 @@ html body footer {
 }
 
 @media (max-width: 768px) {
-    html body footer {
-        justify-content: center;
+    html body footer.justify-content-end {
+        justify-content: center !important;
     }
-
 }
+
 html body footer img {
     width: 24px;
 }
@@ -119,6 +119,12 @@ html body main#sobre-mi section {
     gap: 5px;
     margin-bottom: 10px;
     font-family: 'IBM Plex Sans', sans-serif;
+}
+
+@media (max-width: 768px) {
+    html body main#sobre-mi section {
+        margin: 0 0 20px 0 !important;
+    }
 }
 
 html body main#sobre-mi section:nth-child(odd) {
@@ -273,6 +279,14 @@ html body main#contacto h1 {
 html body main#contacto div.contenedor {
     display: flex;
     justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+    html body main#contacto div.contenedor {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
 }
 
 html body main#contacto div.contenedor div.datos-contacto {
