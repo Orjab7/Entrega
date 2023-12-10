@@ -1,343 +1,288 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,700&display=swap");
 /* Estilos globales */
-
 .row {
-    margin-left: 0;
-    margin-right: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 html {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-
 html body {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    background-color: #E5B8F4;
-    margin: 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #3e0c4f;
+  margin: 0;
+  /* Estilos home */
+  /* Sobre mi */
+  /* Proyectos */
+  /* Estudios */
+  /* Contacto */
 }
-
 html body nav {
-    gap: 20px;
-    background-color: rgba(129, 12, 168, 0.25);
-    min-height: 50px;
-    margin: 20px 40px !important;
-    border-radius: 15px;
+  gap: 20px;
+  background-color: rgba(153, 78, 179, 0.25);
+  min-height: 50px;
+  margin: 20px 40px !important;
+  border-radius: 15px;
 }
-
 html body nav .collapse {
-    justify-content: center;
+  justify-content: center;
 }
-
 html body nav a {
-    font-family: 'Kalam', cursive;
-    text-decoration: none;
-    color: white;
-    font-size: 17px;
+  font-family: "Kalam", cursive;
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
 }
-
 html body footer {
-    background-color: #E5B8F4;
-    gap: 20px;
-    padding: 20px 40px;
+  background-color: #3e0c4f;
+  gap: 20px;
+  padding: 20px 40px;
 }
-
-@media (max-width: 768px) {
-    html body footer.justify-content-end {
-        justify-content: center !important;
-    }
-}
-
 html body footer img {
-    width: 24px;
+  width: 24px;
 }
-
-/* Estilos home */
-
 html body main#index {
-    flex-grow: 1;
-    display: flex;
-    position: relative;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
-
 html body main#index img {
-    background-color: grey;
-    width: 500px;
-    height: 300px;
+  height: 350px;
 }
-
-@media (max-width: 768px) {
-    html body main#index img {
-        width: 95%;
-        height: 200px;
-    }
-}
-
 html body main#index h1 {
-    text-align: center;
-    font-family: 'Kalam', cursive;
-    color: white;
-    font-size: 52px;
-    margin: 0;
-    position: absolute;
-    bottom: 40px;
-    width: 100%;
+  text-align: center;
+  font-family: "Kalam", cursive;
+  color: white;
+  font-size: 52px;
+  margin: 40px 0 0;
 }
-
-/* Estilos sobre mi */
-
 html body main#sobre-mi {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
-
 html body main#sobre-mi h1 {
-    text-align: center;
-    font-family: 'Kalam', cursive;
-    color: #810CA8;
-    font-size: 42px;
-    margin: 0;
+  text-align: center;
+  font-family: "Kalam", cursive;
+  color: #f8f8f8;
+  font-size: 42px;
+  margin: 0;
 }
-
 html body main#sobre-mi section {
-    background-color: rgba(193, 71, 233, 0.7);
-    border-radius: 25px;
-    width: 250px;
-    padding: 13px 20px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-bottom: 10px;
-    font-family: 'IBM Plex Sans', sans-serif;
+  background-color: rgba(193, 71, 233, 0.7);
+  border-radius: 25px;
+  width: 250px;
+  padding: 13px 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+  font-family: "IBM Plex Sans", sans-serif;
 }
-
-@media (max-width: 768px) {
-    html body main#sobre-mi section {
-        margin: 0 0 20px 0 !important;
-    }
-}
-
 html body main#sobre-mi section:nth-child(odd) {
-    margin-left: 320px;
+  margin-left: 320px;
 }
-
 html body main#sobre-mi section:nth-child(even) {
-    margin-right: 320px;
+  margin-right: 320px;
 }
-
 html body main#sobre-mi section span.autor {
-    align-self: flex-end;
+  align-self: flex-end;
 }
-
-/* Proyectos */
-
 html body main#proyectos {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
-
 html body main#proyectos div.contenedor {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 20px;
-    padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 0 20px;
 }
-
 html body main#proyectos h1 {
-    text-align: center;
-    font-family: 'Kalam', cursive;
-    color: #810CA8;
-    font-size: 42px;
-    margin: 0;
+  text-align: center;
+  font-family: "Kalam", cursive;
+  color: #ffffff;
+  font-size: 42px;
+  margin: 0;
 }
-
 html body main#proyectos section {
-    background-color: rgba(193, 71, 233, 0.7);
-    border-radius: 25px;
-    width: 250px;
-    padding: 13px 20px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-bottom: 10px;
-    font-family: 'IBM Plex Sans', sans-serif;
+  background-color: rgba(193, 71, 233, 0.7);
+  border-radius: 25px;
+  width: 250px;
+  padding: 13px 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+  font-family: "IBM Plex Sans", sans-serif;
 }
-
-html body main#proyectos section span.titulo{
-    text-align: center;
-    font-weight: bold;
+html body main#proyectos section span.titulo {
+  text-align: center;
+  font-weight: bold;
 }
-
 html body main#proyectos section span.descripcion {
-    text-align: center;
+  text-align: center;
 }
-
 html body main#proyectos section div {
-    display: flex; 
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
-
 html body main#proyectos section a.link {
-    text-decoration: none;
-    color: #6772DC;
+  text-decoration: none;
+  color: #6772DC;
 }
-
 html body main#proyectos section span.ano {
-    font-weight: bold;
-    font-style: italic;
+  font-weight: bold;
+  font-style: italic;
 }
-
-/* Estudios */
-
 html body main#estudios {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
-
 html body main#estudios div.contenedor {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 20px;
-    padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 0 20px;
 }
-
 html body main#estudios h1 {
-    text-align: center;
-    font-family: 'Kalam', cursive;
-    color: #810CA8;
-    font-size: 42px;
-    margin: 0;
+  text-align: center;
+  font-family: "Kalam", cursive;
+  color: #ffffff;
+  font-size: 42px;
+  margin: 0;
 }
-
 html body main#estudios section {
-    background-color: rgba(193, 71, 233, 0.7);
-    border-radius: 25px;
-    width: 250px;
-    padding: 13px 20px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-bottom: 10px;
-    font-family: 'IBM Plex Sans', sans-serif;
+  background-color: rgba(193, 71, 233, 0.7);
+  border-radius: 25px;
+  width: 250px;
+  padding: 13px 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+  font-family: "IBM Plex Sans", sans-serif;
 }
-
 html body main#estudios section span.titulo {
-    text-align: center;
-    font-weight: bold;
+  text-align: center;
+  font-weight: bold;
 }
-
 html body main#estudios section span.descripcion {
-    text-align: center;
+  text-align: center;
 }
-
 html body main#estudios section span.periodo {
-    text-align: center;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 12px;
-    margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 12px;
+  margin-top: 10px;
 }
-
-/* Contacto */
-
 html body main#contacto {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    position: relative;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
-
-
 html body main#contacto h1 {
-    text-align: center;
-    font-family: 'Kalam', cursive;
-    color: #810CA8;
-    font-size: 42px;
-    margin: 0;
+  text-align: center;
+  font-family: "Kalam", cursive;
+  color: #ffffff;
+  font-size: 42px;
+  margin: 0;
 }
-
 html body main#contacto div.contenedor {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
+}
+html body main#contacto div.contenedor div.datos-contacto {
+  background-color: #C147E9;
+  border-radius: 15px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px 20px;
+  min-width: 250px;
+  min-height: 300px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+html body main#contacto div.contenedor div.datos-contacto span.titulo {
+  font-size: 17px;
+  text-align: center;
+  font-weight: bold;
+}
+html body main#contacto div.contenedor div.datos-contacto span.email {
+  text-align: center;
+}
+html body main#contacto div.contenedor div.datos-contacto span.telefono {
+  text-align: center;
+}
+html body main#contacto div.contenedor form.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+html body main#contacto div.contenedor form.formulario-contacto label {
+  font-size: 12px;
+  margin-bottom: 3px;
+  color: white;
+}
+html body main#contacto div.contenedor form.formulario-contacto input {
+  background-color: #D9D9D9;
+  border: 0;
+  padding: 6px;
+  margin-bottom: 10px;
+}
+html body main#contacto div.contenedor form.formulario-contacto textarea {
+  background-color: #D9D9D9;
+  border: 0;
+  padding: 6px;
+  flex-grow: 1;
 }
 
 @media (max-width: 768px) {
-    html body main#contacto div.contenedor {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
+  html body footer.justify-content-end {
+    justify-content: center !important;
+  }
 }
-
-html body main#contacto div.contenedor div.datos-contacto {
-    background-color: #C147E9;
-    border-radius: 15px;
-    color: white;
-    display: flex;
+@media (max-width: 768px) {
+  html body main#index img {
+    height: 200px;
+  }
+}
+@media (max-width: 768px) {
+  html body main#sobre-mi section {
+    margin: 0 0 20px 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  html body main#contacto div.contenedor {
     flex-direction: column;
-    gap: 15px;
-    padding: 15px 20px;
-    min-width: 250px;
-    min-height: 300px;
-    font-family: 'IBM Plex Sans', sans-serif;
+    align-items: center;
+    gap: 20px;
+  }
 }
 
-html body main#contacto div.contenedor div.datos-contacto span.titulo {
-    font-size: 17px;
-    text-align: center;
-    font-weight: bold;
-}
-
-html body main#contacto div.contenedor div.datos-contacto span.email {
-    text-align: center;
-}
-
-html body main#contacto div.contenedor div.datos-contacto span.telefono {
-    text-align: center;
-}
-
-html body main#contacto div.contenedor form.formulario-contacto {
-    display: flex;
-    flex-direction: column;
-    min-width: 250px;
-    font-family: 'IBM Plex Sans', sans-serif;
-}
-
-html body main#contacto div.contenedor form.formulario-contacto label {
-    font-size: 12px;
-    margin-bottom: 3px;
-}
-
-html body main#contacto div.contenedor form.formulario-contacto input {
-    background-color: #D9D9D9;
-    border: 0;
-    padding: 6px;
-    margin-bottom: 10px;
-}
-
-html body main#contacto div.contenedor form.formulario-contacto textarea {
-    background-color: #D9D9D9;
-    border: 0;
-    padding: 6px;
-    flex-grow: 1;
-}
+/*# sourceMappingURL=style.css.map */
