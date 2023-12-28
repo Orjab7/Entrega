@@ -50,6 +50,41 @@ html {
             }
         }
 
+        // Formas decorativas
+
+        img.forma1 {
+            position: absolute;
+            left: 80px;
+            top: 50px;
+            opacity: 0.4;
+            width: 80px;
+        }
+
+        img.forma2 {
+            position: absolute;
+            right: 0px;
+            top: 50px;
+            opacity: 0.4;
+            width: 80px;
+        }
+
+        img.forma3 {
+            position: absolute;
+            left: 0px;
+            bottom: 50px;
+            opacity: 0.4;
+            width: 80px;
+            transform: rotate(180deg);
+        }
+
+        img.forma4 {
+            position: absolute;
+            right: 0px;
+            bottom: 50px;
+            opacity: 0.4;
+            width: 130px;
+        }
+
         /* Estilos home */
 
         main#index {
@@ -58,7 +93,7 @@ html {
             flex-direction: column;
             position: relative;
 
-            img {
+            img.yo {
                 height: 350px;
                 animation: 3s ease-in-out 0s 1 agrandar;
             }
@@ -69,6 +104,22 @@ html {
                 color: white;
                 font-size: 52px;
                 margin: 40px 0 0;
+            }
+
+            h2 {
+                text-align: center;
+                font-family: 'Kalam', cursive;
+                color: white;
+                font-size: 25px;
+                margin: 10px 0 0;
+            }
+
+            h3 {
+                text-align: center;
+                font-family: 'Kalam', cursive;
+                color: white;
+                font-size: 25px;
+                margin: 10px 0 0;
             }
         }
 
@@ -87,6 +138,14 @@ html {
                 color: #f8f8f8;
                 font-size: 42px;
                 margin: 0;
+            }
+
+            h2 {
+                text-align: center;
+                font-family: 'Kalam', cursive;
+                color: white;
+                font-size: 20px;
+                margin: 10px 40px 30px;
             }
 
             section {
@@ -141,6 +200,14 @@ html {
                 margin: 0;
             }
 
+            h2 {
+                text-align: center;
+                font-family: 'Kalam', cursive;
+                color: white;
+                font-size: 20px;
+                margin: 10px 40px 30px;
+            }
+
             section {
                 background-color: rgba(193, 71, 233, 0.7);
                 border-radius: 25px;
@@ -161,20 +228,15 @@ html {
                 span.descripcion {
                     text-align: center;
                 }
-                
-                div {
-                    display: flex; 
-                    justify-content: space-between;
-                }
-                
-                a.link {
-                    text-decoration: none;
-                    color: #6772DC;
+
+                div.separador {
+                    flex-grow: 1;
                 }
                 
                 span.ano {
                     font-weight: bold;
                     font-style: italic;
+                    align-self: flex-end;
                 }
             }
         }
@@ -202,6 +264,14 @@ html {
                 color: #ffffff;
                 font-size: 42px;
                 margin: 0;
+            }
+
+            h2 {
+                text-align: center;
+                font-family: 'Kalam', cursive;
+                color: white;
+                font-size: 20px;
+                margin: 10px 40px 30px;
             }
             
             section {
@@ -250,6 +320,14 @@ html {
                 font-size: 42px;
                 margin: 0;
             }
+
+            h2 {
+                text-align: center;
+                font-family: 'Kalam', cursive;
+                color: white;
+                font-size: 20px;
+                margin: 10px 40px 30px;
+            }
             
             div.contenedor {
                 display: flex;
@@ -274,11 +352,25 @@ html {
                     }
                     
                     span.email {
-                        text-align: center;
+                        display: inline-flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        gap: 15px;
+
+                        img {
+                            width: 24px;
+                        }
                     }
                     
                     span.telefono {
-                        text-align: center;
+                        display: inline-flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        gap: 15px;
+
+                        img {
+                            width: 24px;
+                        }
                     }
                     
                 }
@@ -341,6 +433,22 @@ html {
         flex-direction: column;
         align-items: center;
         gap: 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    html body main img.forma1 {
+        display: none;
+    }
+    html body main img.forma2 {
+        display: none;
+    }
+    html body main img.forma3 {
+        display: none;
+    }
+    html body main img.forma4 {
+        display: none;
     }
 }
 

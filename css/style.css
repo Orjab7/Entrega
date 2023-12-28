@@ -48,13 +48,42 @@ html body footer {
 html body footer img {
   width: 24px;
 }
+html body img.forma1 {
+  position: absolute;
+  left: 80px;
+  top: 50px;
+  opacity: 0.4;
+  width: 80px;
+}
+html body img.forma2 {
+  position: absolute;
+  right: 0px;
+  top: 50px;
+  opacity: 0.4;
+  width: 80px;
+}
+html body img.forma3 {
+  position: absolute;
+  left: 0px;
+  bottom: 50px;
+  opacity: 0.4;
+  width: 80px;
+  transform: rotate(180deg);
+}
+html body img.forma4 {
+  position: absolute;
+  right: 0px;
+  bottom: 50px;
+  opacity: 0.4;
+  width: 130px;
+}
 html body main#index {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   position: relative;
 }
-html body main#index img {
+html body main#index img.yo {
   height: 350px;
   animation: 3s ease-in-out 0s 1 agrandar;
 }
@@ -64,6 +93,20 @@ html body main#index h1 {
   color: white;
   font-size: 52px;
   margin: 40px 0 0;
+}
+html body main#index h2 {
+  text-align: center;
+  font-family: "Kalam", cursive;
+  color: white;
+  font-size: 25px;
+  margin: 10px 0 0;
+}
+html body main#index h3 {
+  text-align: center;
+  font-family: "Kalam", cursive;
+  color: white;
+  font-size: 25px;
+  margin: 10px 0 0;
 }
 html body main#sobre-mi {
   flex-grow: 1;
@@ -78,6 +121,13 @@ html body main#sobre-mi h1 {
   color: #f8f8f8;
   font-size: 42px;
   margin: 0;
+}
+html body main#sobre-mi h2 {
+  text-align: center;
+  font-family: "Kalam", cursive;
+  color: white;
+  font-size: 20px;
+  margin: 10px 40px 30px;
 }
 html body main#sobre-mi section {
   background-color: rgba(193, 71, 233, 0.7);
@@ -121,6 +171,13 @@ html body main#proyectos h1 {
   font-size: 42px;
   margin: 0;
 }
+html body main#proyectos h2 {
+  text-align: center;
+  font-family: "Kalam", cursive;
+  color: white;
+  font-size: 20px;
+  margin: 10px 40px 30px;
+}
 html body main#proyectos section {
   background-color: rgba(193, 71, 233, 0.7);
   border-radius: 25px;
@@ -140,17 +197,13 @@ html body main#proyectos section span.titulo {
 html body main#proyectos section span.descripcion {
   text-align: center;
 }
-html body main#proyectos section div {
-  display: flex;
-  justify-content: space-between;
-}
-html body main#proyectos section a.link {
-  text-decoration: none;
-  color: #6772DC;
+html body main#proyectos section div.separador {
+  flex-grow: 1;
 }
 html body main#proyectos section span.ano {
   font-weight: bold;
   font-style: italic;
+  align-self: flex-end;
 }
 html body main#estudios {
   flex-grow: 1;
@@ -172,6 +225,13 @@ html body main#estudios h1 {
   color: #ffffff;
   font-size: 42px;
   margin: 0;
+}
+html body main#estudios h2 {
+  text-align: center;
+  font-family: "Kalam", cursive;
+  color: white;
+  font-size: 20px;
+  margin: 10px 40px 30px;
 }
 html body main#estudios section {
   background-color: rgba(193, 71, 233, 0.7);
@@ -212,6 +272,13 @@ html body main#contacto h1 {
   font-size: 42px;
   margin: 0;
 }
+html body main#contacto h2 {
+  text-align: center;
+  font-family: "Kalam", cursive;
+  color: white;
+  font-size: 20px;
+  margin: 10px 40px 30px;
+}
 html body main#contacto div.contenedor {
   display: flex;
   justify-content: space-evenly;
@@ -234,10 +301,22 @@ html body main#contacto div.contenedor div.datos-contacto span.titulo {
   font-weight: bold;
 }
 html body main#contacto div.contenedor div.datos-contacto span.email {
-  text-align: center;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+html body main#contacto div.contenedor div.datos-contacto span.email img {
+  width: 24px;
 }
 html body main#contacto div.contenedor div.datos-contacto span.telefono {
-  text-align: center;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+html body main#contacto div.contenedor div.datos-contacto span.telefono img {
+  width: 24px;
 }
 html body main#contacto div.contenedor form.formulario-contacto {
   display: flex;
@@ -283,6 +362,20 @@ html body main#contacto div.contenedor form.formulario-contacto textarea {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  html body main img.forma1 {
+    display: none;
+  }
+  html body main img.forma2 {
+    display: none;
+  }
+  html body main img.forma3 {
+    display: none;
+  }
+  html body main img.forma4 {
+    display: none;
   }
 }
 @keyframes agrandar {
